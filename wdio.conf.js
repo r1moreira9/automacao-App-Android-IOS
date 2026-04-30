@@ -1,3 +1,5 @@
+const clientConfig = require('./config/clientManager');
+
 exports.config = {
     //
     // ====================
@@ -56,8 +58,9 @@ exports.config = {
     'appium:avd': 'Pixel_7',
     'appium:automationName': 'UiAutomator2',
 
-    'appium:appPackage': 'br.com.pmb.abtchapeco',
-    'appium:appActivity': 'br.com.pmb.abt.MainActivity',
+    'appium:app': clientConfig.app,
+    'appium:appPackage': clientConfig.appPackage,
+    'appium:appActivity': clientConfig.appActivity,
 
     'appium:noReset': true
     }],
@@ -109,7 +112,8 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ['appium'],
+    // Comentado para conectar na sua porta 4723 manual.
+    // services: ['appium'],
 
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
