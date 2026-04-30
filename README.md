@@ -56,7 +56,7 @@ appium
 -- Após tenha o Android Studio Aberto e com emulador iniciado
 
 -- no vscode abre um terminal e rode o comando
-pm run test:(projeto desejado)
+npm run test:(projeto desejado)
 
 ---
 
