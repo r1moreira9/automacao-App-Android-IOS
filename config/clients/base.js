@@ -8,8 +8,7 @@ module.exports = {
             btnSubmit: 'android=new UiSelector().resourceId("br.com.pmb.abtchapeco:id/btnLogin")'
         },
         home: {
-            // Substitua pelo ID real do elemento da home, ex: "br.com.pmb.abtchapeco:id/ID_DA_HOME"
-            container: 'android=new UiSelector().resourceId("ID_DA_HOME")'
+            homeContainer: 'android=new UiSelector().resourceId("br.com.pmb.abtchapeco:id/chooseproductlayout")'
         }
     }
 };

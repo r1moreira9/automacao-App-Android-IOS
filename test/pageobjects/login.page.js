@@ -26,9 +26,6 @@ class LoginPage extends Page {
      * e.g. to login using username and password
      */
     async login(username, password) {
-        // Pausa fixa inicial de 10 seg. para a tela azul de splash screen sumir completamente e o app montar:
-        await driver.pause(10000);
-
         // Aguarda os elementos com até 20 seg por conta da lentidão
         await this.inputUsername.waitForDisplayed({ timeout: 20000 });
         
